@@ -1,4 +1,3 @@
-<img width="1507" height="794" alt="Screenshot 2026-07-02 at 2 05 08 PM" src="https://github.com/user-attachments/assets/d2164bfe-0c76-42c5-a81e-1d344446a5a2" />
 # Mixtape
 
 A social music app where friends share songs, build collaborative playlists, and track listening stats.
@@ -115,4 +114,5 @@ Create a branch named `bugfix/mixtape` for your fixes. Each bug fix should be it
 fix: correct Sunday boundary condition in streak reset logic
 ```
 
-See the project brief for full submission requirements.
+#  SCREENSHOT
+<img width="1507" height="794" alt="Screenshot 2026-07-02 at 2 05 08 PM" src="https://github.com/user-attachments/assets/d2164bfe-0c76-42c5-a81e-1d344446a5a2" />
