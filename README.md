@@ -1,5 +1,4 @@
 <img width="1507" height="794" alt="Screenshot 2026-07-02 at 2 05 08 PM" src="https://github.com/user-attachments/assets/d2164bfe-0c76-42c5-a81e-1d344446a5a2" />
-<img width="1507" height="794" alt="Screenshot 2026-07-02 at 2 05 08 PM" src="https://github.com/user-attachments/assets/c15cc70d-696c-4ede-83d2-17ea8693f73e" />
 # Mixtape
 
 A social music app where friends share songs, build collaborative playlists, and track listening stats.
