@@ -1,0 +1,7 @@
+db5f855 fix: drop unnecessary song_tags join causing duplicate search rows
+c355462 fix: narrow Friends Listening Now window to 30 minutes
+cb218ba fix: notify song sharer when their song is rated
+328f9b3 fix: return the last song in a playlist
+72e63e1 fix: increment listening streak on Sundays (weekday()==6 boundary)
+2dfdeaa Add .gitignore file and update README with setup instructions
+7b64551 initial commit

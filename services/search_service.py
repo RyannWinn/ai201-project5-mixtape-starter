@@ -5,7 +5,7 @@ Handles song search logic.
 """
 
 from app import db
-from models import Song, Tag, song_tags
+from models import Song
 
 
 def search_songs(query: str) -> list[dict]:
@@ -22,15 +22,20 @@ def search_songs(query: str) -> list[dict]:
         A list of song dicts. Each dict includes all song fields plus a
         'tags' list of tag name strings.
     """
+    # NOTE: the query intentionally does NOT join song_tags. Tags are loaded
+    # via the Song.tags relationship (see to_dict). Joining song_tags here
+    # produced one row per tag, which multiplies multi-tag songs — the source
+    # of the reported duplicates. .distinct() guards against any residual
+    # row multiplication regardless of ORM entity de-duplication behavior.
     results = (
         db.session.query(Song)
-        .outerjoin(song_tags, Song.id == song_tags.c.song_id)
         .filter(
             db.or_(
                 Song.title.ilike(f"%{query}%"),
                 Song.artist.ilike(f"%{query}%"),
             )
         )
+        .distinct()
         .all()
     )
 
